@@ -1,0 +1,24 @@
+program NumerosAleatorios;
+
+uses
+  Crt;
+
+var
+  i: Integer;
+  numero: Integer;
+
+begin
+  Randomize;  
+
+  ClrScr;  
+
+  writeln('Generando 10 numeros aleatorios:');
+  
+  for i := 1 to 10 do
+  begin
+    numero := Random(100) + 1;  { Genera un número aleatorio entre 1 y 100 }
+    writeln('Numero ', i, ': ', numero);
+  end;
+
+  readln;  
+end.
